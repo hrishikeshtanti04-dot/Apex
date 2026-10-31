@@ -1,2 +1,2 @@
 Title: Apex Intelligence
-Description: Apex an Artificial intelligenc built by Hrishikesh Tanti.
+Description: "Apex" an Artificial intelligence built by Hrishikesh Tanti.

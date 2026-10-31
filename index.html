@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex AI</title>
+    <style>
+        body {
+            background-color: #0b1021; /* Dark background */
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 400px;
+            height: 600px;
+            background-color: #121933;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #2a3b6b;
+        }
+        .header {
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .messages {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .msg {
+            padding: 10px 15px;
+            border-radius: 15px;
+            max-width: 80%;
+        }
+        .msg.user {
+            background-color: #2a3b6b;
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+        }
+        .msg.ai {
+            background-color: #1f2a4a;
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+            border: 1px solid #4facfe;
+        }
+        .input-area {
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            background-color: #0b1021;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: #1f2a4a;
+            color: white;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="header">Apex AI</div>
+        
+        <div class="messages">
+            <div class="msg ai">Yo bro! Apex is online. What are we building today?</div>
+            <div class="msg user">I want to move to Serbia.</div>
+            <div class="msg ai">That's the goal, bruh. Keep it 100.</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" placeholder="Ask Apex anything...">
+            <button>Send</button>
+        </div>
+    </div>
+
+</body>
+</html>
